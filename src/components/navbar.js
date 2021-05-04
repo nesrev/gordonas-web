@@ -15,8 +15,7 @@ const NavbarBurger = props => (
 
 export default class Navbar extends React.Component {
   state = {
-    activeMenu: false,
-    activeButton:false
+    activeMenu: false
   }
   toggleMenu = () => {
     this.setState({
@@ -57,6 +56,10 @@ export default class Navbar extends React.Component {
         </div>
         <div className="hero-footer">
             <nav class="navbar" role="navigation" aria-label="Menu">
+                <NavbarBurger
+                  active={this.state.activeMenu}
+                  toggleMenu={this.toggleMenu}
+                />
                 <div className="navbar-menu">
                     <div className="navbar-start gd-font">
                         <Link to="/about" className="navbar-item gd-text-orange">
