@@ -44,7 +44,7 @@ export default class Navbar extends React.Component {
                   active={this.state.activeMenu}
                   toggleMenu={this.toggleMenu}
                 />
-                <div className="navbar-menu ${this.state.activeMenu ? 'is-active' : ''}`}">
+                <div className={`navbar-menu ${this.state.activeMenu ? 'is-active' : ''}`}>
                     <div className="navbar-start gd-font">
                         <Link to="/about" className="navbar-item gd-text-orange">
                             ¿Quienes Somos?
