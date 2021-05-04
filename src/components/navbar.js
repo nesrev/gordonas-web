@@ -22,22 +22,6 @@ export default class Navbar extends React.Component {
       activeMenu: !this.state.activeMenu,
     })
   }
-  toggleButton = () => {
-    this.setState({
-      activeButton: !this.state.activeButton,
-    })
-  }
-  navbarOpenDropdown = () => {
-    this.setState({
-      navbarIsActive: "navbar-item has-dropdown is-active"
-    })
-  }
-  //This closes the navbar dropdown
-  navbarCloseDropdown = () => {
-    this.setState({
-      navbarIsActive: "navbar-item has-dropdown is-hoverable"
-    })
-  }
   render() {
     return(
       <section className="hero is-small ">
