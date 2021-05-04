@@ -1,3 +1,38 @@
 @charset "utf-8"
 
 @import "~bulma/bulma.sass"
+
+@font-face 
+   font-family: 'gdFont'
+   src: url("./showg.ttf")
+
+$gd-pink: #EC008C
+$gd-orange: #F58220
+$gd-brown: #5A1D0B
+$gd-purple: #663399
+$gd-pink-light: #E069A8
+$gd-brown-light: #D3A86A
+$gd-black: #050201
+$font-main: 'gdFont', sans-serif
+
+.gb-background-head
+    background-image: url("../images/gd-background-head.png")
+    background-repeat: repeat
+    background-color: $gd-purple
+
+.gb-background-main
+    background-image: url("../images/gd-background-main.png")
+    background-repeat: repeat
+.gd-font
+    font-family: $font-main
+
+.gd-text-orange
+    color: $gd-orange
+    -webkit-text-stroke: 1px $gd-brown
+    font-size: 1.5rem
+
+.gd-text-pink
+    color: $gd-pink
+    -webkit-text-stroke: 1px $gd-brown
+    font-size: 1.5rem
+

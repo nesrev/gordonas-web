@@ -74,9 +74,9 @@ function SEO({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
+  lang: `es`,
+  meta: ['Gordonas','gordonas', 'Full House', 'Donas' , 'Cafe'],
+  description: `Pagina Web Oficial de Gordonas`,
 }
 
 SEO.propTypes = {
